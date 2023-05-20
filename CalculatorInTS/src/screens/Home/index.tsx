@@ -46,7 +46,7 @@ const Calculator: React.FC = () => {
         <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('+')}>
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('-')}>
+        <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('+')}>
           <Text style={styles.buttonText}>-</Text>
         </TouchableOpacity>
 
@@ -90,6 +90,21 @@ const Calculator: React.FC = () => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('2')}>
           <Text style={styles.buttonText}>2</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('3')}>
+          <Text style={styles.buttonText}>3</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleCalculate}>
+          <Text style={styles.buttonText}>=</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.row}>
+        <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('0')}>
+          <Text style={styles.buttonText}>0</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => handleButtonPress(',')}>
+          <Text style={styles.buttonText}>,</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => handleButtonPress('3')}>
           <Text style={styles.buttonText}>3</Text>
