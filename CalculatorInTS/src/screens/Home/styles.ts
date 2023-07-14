@@ -26,6 +26,17 @@ export const styles = StyleSheet.create({
     },
     button: {
       flex: 1,
+      marginVertical: 2,
+      marginHorizontal: 3,
+      backgroundColor: 'grey',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 4,
+      paddingVertical: 12,
+    },
+    buttonResult: {
+      flex: 1,
+      marginVertical: 2,
       marginHorizontal: 3,
       backgroundColor: 'grey',
       alignItems: 'center',
